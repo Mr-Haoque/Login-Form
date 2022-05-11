@@ -1,0 +1,369 @@
+/* * {                    
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ 
+ body {}
+ 
+ .manu {
+     background-color: rgb(75, 81, 83);
+     text-align: center;
+ }
+ 
+ .manu ul {
+     display: inline-flex;
+     list-style: none;
+     color: white;
+ }
+ 
+ .manu ul li {
+     padding: 15px;
+     margin: 15px;
+ }
+ 
+ .manu ul li a {
+     text-decoration: none;
+     color: white;
+ }
+ 
+ .active,
+ .manu ul li:hover {
+     background-color: orangered;
+     border-radius: 5px;
+ }
+ 
+ .manu .fa {
+     margin-right: 10px;
+ }
+ 
+ .sub1 {
+     display: none;
+ }
+ 
+ .manu ul li:hover .sub1 {
+     display: block;
+     position: absolute;
+     background-color: rgb(238, 12, 57);
+     margin-top: 16px;
+     margin-left: -15px;
+ }
+ 
+ .manu ul li:hover .sub1 ul {
+     display: block;
+     margin: 10px;
+ }
+ 
+ .manu ul li:hover .sub1 ul li {
+     width: 150px;
+     padding: 10px;
+     border-bottom: 1px solid #fff;
+     background: transparent;
+     border-radius: 0;
+     text-align: left;
+ }
+ 
+ .manu ul li:hover .sub1 ul li:last-child {
+     border-bottom: none;
+ }
+ 
+ .manu ul li:hover .sub1 ul li a:hover {
+     color: yellow;
+ }
+ 
+ .fa-angle-right {
+     float: right;
+ }
+ 
+ .sub2 {
+     display: none;
+ }
+ 
+ .hover-me:hover .sub2 {
+     position: absolute;
+     display: block;
+     margin-top: 5px;
+     margin-left: 140px;
+     background-color: crimson;
+ }      */
+
+
+/*       body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    padding: 60px 40px 50px 40px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 5px;
+}
+
+#name {
+    width: 200px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    padding: 6px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#button {
+    padding: 10px 20px;
+    background: dodgerblue;
+    color: white;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+
+#button:hover {
+    background-color: orangered;
+}
+
+a {
+    font-size: 13px;
+    color: wheat;
+    text-decoration: none;
+}
+
+a:hover {
+    color: tomato;
+}
+
+img {
+    border-radius: 50%;
+    position: relative;
+    left: 100px;
+    top: 20px;
+}     */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.manu {
+    background-color: rgb(241, 105, 8);
+    text-align: center;
+}
+
+.logo {
+    float: left;
+    padding: 5px;
+    margin: 15px;
+    font-weight: 900;
+    font-size: 40px;
+    width: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(68, 0, 255);
+    transition: 1s;
+}
+
+.logo::first-letter {
+    color: rgb(0, 139, 23);
+}
+
+.logo:hover {
+    background: #fb2525;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.manu ul {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.manu ul li {
+    padding: 15px;
+    margin: 15px;
+    width: 120px;
+    transition: 1s;
+}
+
+.manu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.manu ul li:hover {
+    color: red;
+    transform: translateY(10px);
+}
+
+.loginbox {
+    width: 320px;
+    height: 420px;
+    background-color: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    left: 100px;
+}
+
+h1 {
+    margin: 0px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"],
+input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.loginbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: 2s;
+}
+
+.loginbox input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.loginbox a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
+
+.loginbox a:hover {
+    color: #ffc107;
+}
+
+@media screen and (max-width:600px) {}
+
+
+/*   * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ 
+ .navbar {
+     background-color: rgb(0, 0, 0);
+     text-align: center;
+ }
+ 
+ .navbar ul {
+     display: inline-flex;
+     list-style: none;
+ }
+ 
+ .navbar ul li {
+     padding: 15px;
+     margin: 15px;
+ }
+ 
+ .navbar ul li a {
+     text-decoration: none;
+     color: white;
+ }
+ 
+ .container {
+     width: 500px;
+     height: 300px;
+     background-color: orangered;
+     margin: 10px auto;
+ }
+ 
+ .container h1 {
+     padding: 10px;
+     text-align: center;
+     color: white;
+ }
+ 
+ .container h3 {
+     margin-left: 20px;
+     padding: 10px;
+     color: rgb(76, 0, 255);
+     background-color: red;
+     margin-right: 5px;
+ }
+ 
+ .container p {
+     margin-left: 10px;
+ }
+ 
+ @media screen and (max-width:600px) {
+     .container {
+         background-color: springgreen;
+         width: 100%;
+     }
+     .container h1 {
+         color: rgb(76, 0, 255);
+     }
+     .container h3 {
+         color: white;
+     }
+     .container p {
+         background-color: paleturquoise;
+         margin-right: 5px;
+         padding: 5px;
+     }
+     .navbar {
+         background-color: orangered;
+         width: 100%;
+         flex: none;
+     }
+     .navbar ul {
+         display: block;
+     }
+     .navbar ul li:hover {
+         transform: translate(10px);
+         border-bottom: 1px solid white;
+     }
+ }   */
